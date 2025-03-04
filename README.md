@@ -166,25 +166,6 @@ This milestone set the foundation for session management and token-based authent
 
 ---
 
-# E-Commerce Application
-
-## Overview
-This e-commerce application enables users to browse products, filter products based on user email, update product details, delete products, and manage a shopping cart. The project is built using React for the frontend and Node.js with Express and MongoDB for the backend.
-
-## Features
-- View all products on the homepage
-- View product details on a dedicated product info page
-- Filter products by user email
-- Add new products
-- Update existing products
-- Delete products
-- Add products to the cart
-- View cart contents on the cart page
-
----
-
-## Milestones
-
 ### Milestone 11: Fetching and Displaying Product Data
 - **Backend:**
   - Created a `GET /api/products` endpoint to fetch all product data.
