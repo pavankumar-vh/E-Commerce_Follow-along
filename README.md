@@ -166,3 +166,100 @@ This milestone set the foundation for session management and token-based authent
 
 ---
 
+# E-Commerce Application
+
+## Overview
+This e-commerce application enables users to browse products, filter products based on user email, update product details, delete products, and manage a shopping cart. The project is built using React for the frontend and Node.js with Express and MongoDB for the backend.
+
+## Features
+- View all products on the homepage
+- View product details on a dedicated product info page
+- Filter products by user email
+- Add new products
+- Update existing products
+- Delete products
+- Add products to the cart
+- View cart contents on the cart page
+
+---
+
+## Milestones
+
+### Milestone 11: Fetching and Displaying Product Data
+- **Backend:**
+  - Created a `GET /api/products` endpoint to fetch all product data.
+  - Implemented MongoDB queries using Mongoose.
+  - Ensured error handling for potential issues.
+- **Frontend:**
+  - Created an API call function using `fetch` or `axios`.
+  - Managed fetched data with `useState` and `useEffect`.
+  - Displayed products dynamically using a `ProductCard` component.
+  - Applied responsive CSS styling.
+
+### Milestone 12: Filtering Products by User Email
+- **Backend:**
+  - Created a `GET /api/products/:email` endpoint to return products by user email.
+  - Used Mongoose to query products uploaded by the specified email.
+  - Implemented error handling for missing products.
+- **Frontend:**
+  - Created a function to fetch user-specific products.
+  - Used `useState` and `useEffect` to manage data.
+  - Displayed filtered products dynamically with `ProductCard`.
+  - Ensured a structured UI with responsive design.
+
+### Milestone 13: Updating Product Data and Form Auto-Fill
+- **Backend:**
+  - Developed a `PUT` endpoint to update product data.
+  - Used Mongoose to locate and update products by ID.
+  - Added data validation and error handling.
+- **Frontend:**
+  - Implemented an "Edit" button to open a pre-filled form.
+  - Allowed users to modify and save product details.
+  - Managed form data using `useState` and `useEffect`.
+  - Added error messages and success notifications.
+
+### Milestone 14: Deleting Product Data
+- **Backend:**
+  - Created a `DELETE` endpoint to remove products by ID.
+  - Implemented error handling for non-existent product IDs.
+- **Frontend:**
+  - Added a "Delete" button to each product card.
+  - Implemented a confirmation dialog before deletion.
+  - Updated the product list dynamically.
+  - Provided feedback on success or failure.
+
+### Milestone 15: Creating a Responsive Navbar
+- **Frontend:**
+  - Designed a reusable `Nav` component.
+  - Included links to `Home`, `My Products`, `Add Product`, and `Cart`.
+  - Implemented navigation using React Router.
+  - Ensured responsiveness with Flexbox and media queries.
+
+### Milestone 16: Product Info Page with Quantity Selection and Add to Cart
+- **Frontend:**
+  - Designed a `Product Info` page with detailed product information.
+  - Added a quantity selector and "Add to Cart" button.
+  - Used React Router to navigate and fetch product details.
+  - Managed cart state when adding products.
+
+### Milestone 17: Adding Products to Cart
+- **Frontend:**
+  - Created a `Cart` component to display added products.
+  - Managed cart state using React.
+- **Backend:**
+  - Created an API endpoint to handle cart additions.
+  - Updated cart data in the database.
+  - Fetched updated cart state from the backend.
+
+### Milestone 18: Creating an Endpoint for Cart Page
+- **Backend:**
+  - Developed an API endpoint to fetch cart contents.
+  - Implemented logic to retrieve cart data from the database.
+- **Frontend:**
+  - Designed a `Cart Page` component.
+  - Used React Router for navigation.
+  - Fetched cart contents dynamically.
+
+---
+
+
